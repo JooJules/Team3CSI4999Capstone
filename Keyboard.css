@@ -1,0 +1,9 @@
+.keyboard,
+.keyboard * {
+  box-sizing: border-box;
+}
+.keyboard {
+  height: 1024px;
+  position: relative;
+  overflow: visible;
+}
