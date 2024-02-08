@@ -1,0 +1,112 @@
+.planner,
+.planner * {
+  box-sizing: border-box;
+}
+.planner {
+  background: #ffffff;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 10px;
+  height: 1024px;
+  position: relative;
+  overflow: hidden;
+}
+.group-5 {
+  position: absolute;
+  inset: 0;
+}
+.rectangle-51 {
+  background: #d9d9d9;
+  width: 1260px;
+  height: 155px;
+  position: absolute;
+  left: 107px;
+  top: 55px;
+}
+.select-an-activity {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 64px;
+  font-weight: 400;
+  position: absolute;
+  left: 133px;
+  top: 60px;
+  width: 1211px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rectangle-52 {
+  background: #d9d9d9;
+  width: 350px;
+  height: 127px;
+  position: absolute;
+  left: 107px;
+  top: 300px;
+}
+.rectangle-60 {
+  background: #d9d9d9;
+  width: 350px;
+  height: 127px;
+  position: absolute;
+  left: 1017px;
+  top: 724px;
+}
+.rectangle-59 {
+  background: #d9d9d9;
+  width: 350px;
+  height: 127px;
+  position: absolute;
+  left: 564px;
+  top: 724px;
+}
+.rectangle-58 {
+  background: #d9d9d9;
+  width: 350px;
+  height: 127px;
+  position: absolute;
+  left: 107px;
+  top: 724px;
+}
+.rectangle-55 {
+  background: #d9d9d9;
+  width: 350px;
+  height: 127px;
+  position: absolute;
+  left: 107px;
+  top: 512px;
+}
+.rectangle-56 {
+  background: #d9d9d9;
+  width: 350px;
+  height: 127px;
+  position: absolute;
+  left: 564px;
+  top: 512px;
+}
+.rectangle-57 {
+  background: #d9d9d9;
+  width: 350px;
+  height: 127px;
+  position: absolute;
+  left: 1017px;
+  top: 512px;
+}
+.rectangle-53 {
+  background: #d9d9d9;
+  width: 350px;
+  height: 127px;
+  position: absolute;
+  left: 564px;
+  top: 300px;
+}
+.rectangle-54 {
+  background: #d9d9d9;
+  width: 350px;
+  height: 127px;
+  position: absolute;
+  left: 1017px;
+  top: 300px;
+}
