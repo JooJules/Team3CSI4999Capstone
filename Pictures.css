@@ -1,0 +1,85 @@
+.pictures,
+.pictures * {
+  box-sizing: border-box;
+}
+.pictures {
+  background: #ffffff;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 10px;
+  height: 1024px;
+  position: relative;
+  overflow: hidden;
+}
+.frame-1 {
+  width: 119px;
+  height: 129px;
+  position: absolute;
+  left: 522px;
+  top: 361px;
+  overflow: hidden;
+}
+.rectangle-6 {
+  background: #d9d9d9;
+  width: 173px;
+  height: 167px;
+  position: absolute;
+  left: 235px;
+  top: 302px;
+}
+.rectangle-13 {
+  background: #d9d9d9;
+  width: 173px;
+  height: 167px;
+  position: absolute;
+  left: 1031px;
+  top: 555px;
+}
+.rectangle-11 {
+  background: #d9d9d9;
+  width: 173px;
+  height: 167px;
+  position: absolute;
+  left: 495px;
+  top: 555px;
+}
+.rectangle-12 {
+  background: #d9d9d9;
+  width: 174px;
+  height: 167px;
+  position: absolute;
+  left: 755px;
+  top: 555px;
+}
+.rectangle-10 {
+  background: #d9d9d9;
+  width: 173px;
+  height: 167px;
+  position: absolute;
+  left: 235px;
+  top: 555px;
+}
+.rectangle-9 {
+  background: #d9d9d9;
+  width: 173px;
+  height: 167px;
+  position: absolute;
+  left: 1031px;
+  top: 302px;
+}
+.rectangle-7 {
+  background: #d9d9d9;
+  width: 173px;
+  height: 167px;
+  position: absolute;
+  left: 495px;
+  top: 302px;
+}
+.rectangle-8 {
+  background: #d9d9d9;
+  width: 174px;
+  height: 167px;
+  position: absolute;
+  left: 743px;
+  top: 302px;
+}
