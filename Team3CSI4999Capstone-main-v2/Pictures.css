@@ -1,0 +1,122 @@
+.pictures,
+.pictures * {
+  box-sizing: border-box;
+}
+.pictures {
+  background: #B7946A;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 10px;
+  height: 1024px;
+  position: relative;
+  overflow: hidden;
+}
+.frame-1 {
+  width: 119px;
+  height: 129px;
+  position: absolute;
+  left: 522px;
+  top: 361px;
+  overflow: hidden;
+}
+.rectangle-6 {
+  background: #d9d9d9;
+  width: 173px;
+  height: 167px;
+  position: absolute;
+  left: 235px;
+  top: 302px;
+}
+.rectangle-13 {
+  background: #d9d9d9;
+  width: 173px;
+  height: 167px;
+  position: absolute;
+  left: 1031px;
+  top: 555px;
+}
+.rectangle-11 {
+  background: #d9d9d9;
+  width: 173px;
+  height: 167px;
+  position: absolute;
+  left: 495px;
+  top: 555px;
+}
+.rectangle-12 {
+  background: #d9d9d9;
+  width: 174px;
+  height: 167px;
+  position: absolute;
+  left: 755px;
+  top: 555px;
+}
+.rectangle-10 {
+  background: #d9d9d9;
+  width: 173px;
+  height: 167px;
+  position: absolute;
+  left: 235px;
+  top: 555px;
+}
+.rectangle-9 {
+  background: #d9d9d9;
+  width: 173px;
+  height: 167px;
+  position: absolute;
+  left: 1031px;
+  top: 302px;
+}
+.rectangle-7 {
+  background: #d9d9d9;
+  width: 173px;
+  height: 167px;
+  position: absolute;
+  left: 495px;
+  top: 302px;
+}
+.rectangle-8 {
+  background: #d9d9d9;
+  width: 174px;
+  height: 167px;
+  position: absolute;
+  left: 743px;
+  top: 302px;
+}
+
+.group-6 {width: 182px; height: 66px;
+  position: absolute; 
+  left: 106px;
+  top: 82px;
+}
+.rectangle-67 {background: #d9d9d9;border-radius: 100px;
+  position: absolute; 
+  right: 0%; 
+  left: 0%; 
+  width: 100%;
+  bottom: 0%; 
+  top: 0%; 
+  height: 100%;
+}
+
+.rectangle-67:hover {
+  transition: 0.2s ease-in;
+  background-image: linear-gradient(rgb(0 0 0/40%) 0 0);
+}
+
+.home {
+color: #000000;
+text-align: left;
+font-family: 'Inter-Regular', sans-serif;
+font-size: 40px;
+font-weight: 400;
+position: absolute; 
+right: 0%; 
+left: 17.03%; 
+width: 82.97%;bottom: 13.64%; 
+top: 0%; 
+height: 86.36%;
+display: flex;
+align-items: center;
+justify-content: flex-start-webkit-text-stroke 1px #000000;
+}

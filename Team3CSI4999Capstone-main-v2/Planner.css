@@ -1,0 +1,148 @@
+.planner,
+.planner * {
+  box-sizing: border-box;
+}
+.planner {
+  background: #B7946A;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 10px;
+  height: 1024px;
+  position: relative;
+  overflow: hidden;
+}
+.group-5 {
+  position: absolute;
+  inset: 0;
+}
+.rectangle-51 {
+  background: #d9d9d9;
+  width: 1024.43px;
+  height: 62.97px;
+  position: absolute;
+  left: 208px;
+  top: 188px;
+}
+.select-an-activity {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 64px;
+  font-weight: 400;
+  position: absolute;
+  left: 229.14px;
+  top: 190.03px;
+  width: 984.59px;
+  height: 60.94px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rectangle-52 {
+  background: #d9d9d9;
+  width: 350px;
+  height: 127px;
+  position: absolute;
+  left: 107px;
+  top: 300px;
+}
+.rectangle-60 {
+  background: #d9d9d9;
+  width: 350px;
+  height: 127px;
+  position: absolute;
+  left: 1017px;
+  top: 724px;
+}
+.rectangle-59 {
+  background: #d9d9d9;
+  width: 350px;
+  height: 127px;
+  position: absolute;
+  left: 564px;
+  top: 724px;
+}
+.rectangle-58 {
+  background: #d9d9d9;
+  width: 350px;
+  height: 127px;
+  position: absolute;
+  left: 107px;
+  top: 724px;
+}
+.rectangle-55 {
+  background: #d9d9d9;
+  width: 350px;
+  height: 127px;
+  position: absolute;
+  left: 107px;
+  top: 512px;
+}
+.rectangle-56 {
+  background: #d9d9d9;
+  width: 350px;
+  height: 127px;
+  position: absolute;
+  left: 564px;
+  top: 512px;
+}
+.rectangle-57 {
+  background: #d9d9d9;
+  width: 350px;
+  height: 127px;
+  position: absolute;
+  left: 1017px;
+  top: 512px;
+}
+.rectangle-53 {
+  background: #d9d9d9;
+  width: 350px;
+  height: 127px;
+  position: absolute;
+  left: 564px;
+  top: 300px;
+}
+.rectangle-54 {
+  background: #d9d9d9;
+  width: 350px;
+  height: 127px;
+  position: absolute;
+  left: 1017px;
+  top: 300px;
+}
+.group-6 {width: 182px; height: 66px;
+  position: absolute; 
+  left: 47px;
+  top: 37px;
+}
+.rectangle-67 {background: #d9d9d9;border-radius: 100px;
+  position: absolute; 
+  right: 0%; 
+  left: 0%; 
+  width: 100%;
+  bottom: 0%; 
+  top: 0%; 
+  height: 100%;
+}
+
+.rectangle-67:hover {
+  transition: 0.2s ease-in;
+  background-image: linear-gradient(rgb(0 0 0/40%) 0 0);
+}
+
+.home {
+color: #000000;
+text-align: left;
+font-family: 'Inter-Regular', sans-serif;
+font-size: 40px;
+font-weight: 400;
+position: absolute; 
+right: 0%; 
+left: 17.03%; 
+width: 82.97%;bottom: 13.64%; 
+top: 0%; 
+height: 86.36%;
+display: flex;
+align-items: center;
+justify-content: flex-start-webkit-text-stroke 1px #000000;
+}
