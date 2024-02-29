@@ -1,29 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-   
-    <title>Capstone</title>
-    <link rel="stylesheet" href="Planner.css" />
-  </head>
-  <body>
+<head>
+  <title>Capstone</title>
+  <link rel="stylesheet" href="Planner.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
-
-<div class="planner">
-    <div class="group-5">
-      <div class="rectangle-51"></div>
-      <div class="select-an-activity">Select an activity</div>
+<body>
+  <div class="planner">
+    <div class="message-container" id="message-container"></div> <!-- Container for messages -->
+    <div class="submit-form">
+      <div class="input">
+        <textarea name="input" id="input" cols="40" rows="3"></textarea>
+        <button id="btn">Submit</button>
+      </div>
     </div>
-    <div class="rectangle-52"></div>
-    <div class="rectangle-60"></div>
-    <div class="rectangle-59"></div>
-    <div class="rectangle-58"></div>
-    <div class="rectangle-55"></div>
-    <div class="rectangle-56"></div>
-    <div class="rectangle-57"></div>
-    <div class="rectangle-53"></div>
-    <div class="rectangle-54"></div>
   </div>
 
-  
+  <div class="group-6">
+    <a href="./HomeScreen.html">
+      <button class="rectangle-67">Home</button>
+    </a>
+  </div>
+
+  <script>
+    const btn = document.getElementById("btn");
+
+    btn.addEventListener('click', getResponse);
+
+    async function getResponse() {
+      const inputText = document.getElementById("input").value.trim(); // Trim whitespace
+      const parentDiv = document.getElementById("message-container");
+
+      if (inputText === '') {
+        return;
+      }
+
+      const userMessage = document.createElement('div');
+      userMessage.textContent = inputText;
+      userMessage.classList.add("message-box", "user-message");
+      parentDiv.appendChild(userMessage);
+
+      document.getElementById("input").value = '';
+
+      try {
+        const response = await fetch('http://localhost:3000/chat', {
+          method: 'POST',
+          headers: {
+            "Content-Type": 'application/json'
+          },
+          body: JSON.stringify({
+            message: inputText
+          })
+        });
+
+        if (!response.ok) {
+          throw new Error('Server error');
+        }
+
+        const data = await response.json();
+        console.log('Server response:', data); // Log the response
+
+        const botResponse = data.message; // Update to access the correct property
+        if (botResponse) {
+          const botResponseElement = document.createElement('div');
+          botResponseElement.textContent = botResponse;
+          botResponseElement.classList.add("message-box", "bot-response");
+          parentDiv.appendChild(botResponseElement);
+          console.log('Bot message:', botResponse); // Log the bot's message
+        } else {
+          throw new Error('Invalid response from OpenAI API');
+        }
+      } catch (error) {
+        console.error('Error:', error.message);
+      }
+    }
+  </script>
 </body>
 </html>
