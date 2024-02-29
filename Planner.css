@@ -2,111 +2,95 @@
 .planner * {
   box-sizing: border-box;
 }
+
 .planner {
-  background: #ffffff;
+  background: #b7946a;
   border-style: solid;
   border-color: #000000;
   border-width: 10px;
-  height: 1024px;
+  height: 100vh;
   position: relative;
   overflow: hidden;
 }
-.group-5 {
+
+.input {
   position: absolute;
-  inset: 0;
+  top: 70%; /* Adjust vertical position */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%; /* Adjust width */
+  max-width: 20000px; /* Adjust max width */
 }
-.rectangle-51 {
-  background: #d9d9d9;
-  width: 1260px;
-  height: 155px;
+
+.input textarea {
+  width: 100%;
+  height: 100px; /* Adjust height if needed */
+  resize: none;
+  font-size: 18px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.message-container {
+  background-color: white;
   position: absolute;
-  left: 107px;
-  top: 55px;
+  width: 90%; /* Adjust width */
+  max-width: 20000px; /* Adjust max width */
+  height: 50%; /* Adjust height */
+  top: 10%; /* Adjust vertical position */
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  overflow-y: auto;
 }
-.select-an-activity {
+
+.message-box {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  width: 100%; /* Ensure same width as input textarea */
+}
+
+.group-6 {
+  width: 182px;
+  height: 66px;
+  position: absolute;
+  left: 47px;
+  top: 37px;
+}
+
+.home {
   color: #000000;
-  text-align: center;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 64px;
+  text-align: left;
+  font-family: 'Inter-Regular', sans-serif;
+  font-size: 40px;
   font-weight: 400;
   position: absolute;
-  left: 133px;
-  top: 60px;
-  width: 1211px;
-  height: 150px;
+  right: 0%;
+  left: 17.03%;
+  width: 82.97%;
+  bottom: 13.64%;
+  top: 0%;
+  height: 86.36%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  -webkit-text-stroke: 1px #000000;
 }
-.rectangle-52 {
+
+.rectangle-67 {
+  text-align: center;
+  font-family: 'Inter-Regular', sans-serif;
+  font-size: 40px;
+  font-weight: 400;
   background: #d9d9d9;
-  width: 350px;
-  height: 127px;
+  border-radius: 100px;
   position: absolute;
-  left: 107px;
-  top: 300px;
-}
-.rectangle-60 {
-  background: #d9d9d9;
-  width: 350px;
-  height: 127px;
-  position: absolute;
-  left: 1017px;
-  top: 724px;
-}
-.rectangle-59 {
-  background: #d9d9d9;
-  width: 350px;
-  height: 127px;
-  position: absolute;
-  left: 564px;
-  top: 724px;
-}
-.rectangle-58 {
-  background: #d9d9d9;
-  width: 350px;
-  height: 127px;
-  position: absolute;
-  left: 107px;
-  top: 724px;
-}
-.rectangle-55 {
-  background: #d9d9d9;
-  width: 350px;
-  height: 127px;
-  position: absolute;
-  left: 107px;
-  top: 512px;
-}
-.rectangle-56 {
-  background: #d9d9d9;
-  width: 350px;
-  height: 127px;
-  position: absolute;
-  left: 564px;
-  top: 512px;
-}
-.rectangle-57 {
-  background: #d9d9d9;
-  width: 350px;
-  height: 127px;
-  position: absolute;
-  left: 1017px;
-  top: 512px;
-}
-.rectangle-53 {
-  background: #d9d9d9;
-  width: 350px;
-  height: 127px;
-  position: absolute;
-  left: 564px;
-  top: 300px;
-}
-.rectangle-54 {
-  background: #d9d9d9;
-  width: 350px;
-  height: 127px;
-  position: absolute;
-  left: 1017px;
-  top: 300px;
+  right: 0%;
+  left: 0%;
+  width: 100%;
+  bottom: 0%;
+  top: 0%;
+  height: 100%;
 }
