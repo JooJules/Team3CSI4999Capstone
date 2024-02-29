@@ -1,0 +1,140 @@
+.keyboard, .keyboard * { box-sizing: border-box; }.keyboard {background: #b7946a;
+  border-style: solid; 
+  border-color: #000000;
+  border-width: 10px;
+  height: 1024px;
+      position: relative;
+    overflow: hidden;}
+
+ .group-6 {width: 182px; height: 66px;
+      position: absolute; left: 39px;top: 35px;
+    }
+ .rectangle-67 {background: #d9d9d9;border-radius: 100px;
+      position: absolute; right: 0%; left: 0%; width: 100%;bottom: 0%; top: 0%; height: 100%;
+      align-items: center;
+      font-size: 40px;
+      font-weight: 400;
+    }
+    .home {
+      color: #000000;text-align: left;font-family: 'Inter-Regular', sans-serif;
+      font-size: 40px;
+      font-weight: 400;
+      position: absolute; right: 0%; left: 17.03%; width: 82.97%;bottom: 13.64%; top: 0%; height: 86.36%;
+      display: flex;
+      align-items: center;
+    }
+
+
+/*                          */
+    .virtualkeyboard {
+      
+      
+      position: relative; 
+      left: 550px; 
+      top: 270px;
+     
+       background-color: transparent;
+       border: none; 
+      /* display:inline-block;
+       height:30px;
+      width: 10%; */
+
+      /* grid-template-columns: 1f 8f 1f;  */
+
+      
+    }
+
+.textInput{
+position: absolute; left: 550px; top: 150px;
+height:50px;
+width:800px;
+font-size:14pt;
+
+
+
+}
+
+
+
+.keyboard-button {
+  width: 80px; /* Adjust the width as needed */
+  height: 80px; /* Adjust the height as needed */
+  margin: 5px; /* Add margin for spacing */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  vertical-align: middle;
+  flex: 1 0 calc(20% - 10px);
+  font-size: 1.2em;
+  padding: 0.5em 1em;
+}
+
+
+
+.special-key {
+  width: 200px; /* Adjust the width for special keys */
+  height: 40px; /* Adjust the height for special keys */
+}
+
+.keyboard-button.pressed {
+  background-color: rgb(207, 207, 201); /* Change the background color as needed */
+  color: black; /* Change the text color as needed */
+}
+
+
+.speakButton {
+position: absolute; 
+height:50px;
+width: 20ps;
+left: 1350px; 
+top: 150px;
+
+
+}
+
+
+
+#virtualKeyboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+  gap: 10px;
+}
+
+
+
+
+
+@media (max-width: 600px) {
+  #virtualKeyboard {
+    gap: 5px;
+  }
+
+  .keyboard-button {
+    font-size: 1em;
+    padding: 0.3em 0.7em;
+    
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  /* Styles for medium screens */
+}
+
+@media (min-width: 1025px) {
+  /* Styles for large screens */
+}
+
+
+
+
+body {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Responsive styles for smaller screens */
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+  /* Add other specific styles for small screens */
+}
