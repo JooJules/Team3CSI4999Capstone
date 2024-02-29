@@ -1,0 +1,44 @@
+/*So that the last row of buttons is not 
+hugging the very bottom of the screen.
+Top positioning will vary based on how many
+rows there are.*/
+
+.animals-invisible-box {
+    background: rgba(0, 0, 0, 0);
+    top: 400%;
+    height: 1%;
+    width: 100%;
+    position: absolute;
+}
+
+.food-invisible-box {
+    background: rgba(0, 0, 0, 0);
+    top: 400%;
+    height: 1%;
+    width: 100%;
+    position: absolute;
+}
+
+.object-invisible-box {
+    background: rgba(0, 0, 0, 0);
+    top: 228.58%;
+    height: 1%;
+    width: 100%;
+    position: absolute;
+}
+
+.places-invisible-box {
+    background: rgba(0, 0, 0, 0);
+    top: 331.45%;
+    height: 1%;
+    width: 100%;
+    position: absolute;
+  }
+
+.transportation-invisible-box {
+    background: rgba(0, 0, 0, 0);
+    top: 262.87%;
+    height: 1%;
+    width: 100%;
+    position: absolute;
+}

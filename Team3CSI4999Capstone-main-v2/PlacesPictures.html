@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Capstone</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie Flower"/>
+  <link rel="stylesheet" href="Pictures.css"/>
+  <link rel="stylesheet" href="InvisibleBoxes.css"/>
+</head>
+
+<body>
+    <div class="header-bar">
+      <a href="./HomeScreen.html">
+        <button class="home-button">
+          <img class="home-icon-1" src="./images/home icon.webp" />
+          <div class="home-button-text">Home</div>
+      </button>
+      </a>
+      <div class="vocalizer">Vocalizer</div>
+    </div>
+    <div class="select-image">Select an image</div>
+    <div class="category-button-row">
+      <a href="./FoodPictures.html">
+        <button class="category-button">Food</button>
+      </a>
+      <a href="./TransportationPictures.html">
+        <button class="category-button">Transport</button>
+      </a>
+      <a href="./PlacesPictures.html">
+        <button class="selected-category-button">Places</button>
+      </a>
+      <a href="./AnimalPictures.html">
+        <button class="category-button">Animals</button>
+      </a>
+      <a href="./ObjectPictures.html">
+        <button class="category-button">Objects</button>
+      </a>
+    </div>
+    <button class="image-button button-column-1 button-row-1" type="button" id="backyard" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Places/backyard.png"/>
+      <div class="image-button-text-box">Backyard</div>
+    </button>
+
+    <button class="image-button button-column-2 button-row-1" type="button" id="bathroom" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Places/bathroom.png"/>
+      <div class="image-button-text-box">Bathroom</div>
+    </button>
+
+    <button class="image-button button-column-3 button-row-1" type="button" id="bedroom" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Places/bedroom.png"/>
+      <div class="image-button-text-box">Bedroom</div>
+    </button>
+
+    <button class="image-button button-column-4 button-row-1" type="button" id="classroom" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Places/classroom.png"/>
+      <div class="image-button-text-box">Classroom</div>
+    </button>
+
+    <button class="image-button button-column-1 button-row-2" type="button" id="closet" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Places/closet.png"/>
+      <div class="image-button-text-box">Closet</div>
+    </button>
+
+    <button class="image-button button-column-2 button-row-2" type="button" id="front yard" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Places/front yard.png"/>
+      <div class="image-button-text-box">Front Yard</div>
+    </button>
+
+    <button class="image-button button-column-3 button-row-2" type="button" id="garage" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Places/garage.png"/>
+      <div class="image-button-text-box">Garage</div>
+    </button>
+
+    <button class="image-button button-column-4 button-row-2" type="button" id="grocery store" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Places/grocery store.png"/>
+      <div class="image-button-text-box">Grocery Store</div>
+    </button>
+
+    <button class="image-button button-column-1 button-row-3" type="button" id="home" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Places/home.png"/>
+      <div class="image-button-text-box">Home</div>
+    </button>
+
+    <button class="image-button button-column-2 button-row-3" type="button" id="kitchen" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Places/kitchen.png"/>
+      <div class="image-button-text-box">Kitchen</div>
+    </button>
+
+    <button class="image-button button-column-3 button-row-3" type="button" id="living room" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Places/living room.png"/>
+      <div class="image-button-text-box">Living Room</div>
+    </button>
+
+    <button class="image-button button-column-4 button-row-3" type="button" id="outside" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Places/outside.png"/>
+      <div class="image-button-text-box">Outside</div>
+    </button>
+
+    <button class="image-button button-column-1 button-row-4" type="button" id="playground" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Places/playground.png"/>
+      <div class="image-button-text-box">Playground</div>
+    </button>
+
+    <button class="image-button button-column-2 button-row-4" type="button" id="school" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Places/school.png"/>
+      <div class="image-button-text-box">School</div>
+    </button>
+
+    <button class="image-button button-column-3 button-row-4" type="button" id="airport" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Places/airport.png"/>
+      <div class="image-button-text-box">Airport</div>
+    </button>
+
+    <button class="image-button button-column-4 button-row-4" type="button" id="beach" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Places/beach.png"/>
+      <div class="image-button-text-box">Beach</div>
+    </button>
+
+    <button class="image-button button-column-1 button-row-5" type="button" id="campground" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Places/campground.png"/>
+      <div class="image-button-text-box">Campground</div>
+    </button>
+
+    <button class="image-button button-column-2 button-row-5" type="button" id="carnival" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Places/carnival.png"/>
+      <div class="image-button-text-box">Carnival</div>
+    </button>
+
+    <button class="image-button button-column-3 button-row-5" type="button" id="city" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Places/city.png"/>
+      <div class="image-button-text-box">City</div>
+    </button>
+
+    <button class="image-button button-column-4 button-row-5" type="button" id="farm" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Places/farm.png"/>
+      <div class="image-button-text-box">Farm</div>
+    </button>
+
+    <button class="image-button button-column-1 button-row-6" type="button" id="forest" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Places/forest.png"/>
+      <div class="image-button-text-box">Forest</div>
+    </button>
+
+    <button class="image-button button-column-2 button-row-6" type="button" id="hospital" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Places/hospital.png"/>
+      <div class="image-button-text-box">Hospital</div>
+    </button>
+
+    <button class="image-button button-column-3 button-row-6" type="button" id="lighthouse" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Places/lighthouse.png"/>
+      <div class="image-button-text-box">Lighthouse</div>
+    </button>
+
+    <button class="image-button button-column-4 button-row-6" type="button" id="mall" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Places/mall.png"/>
+      <div class="image-button-text-box">Mall</div>
+    </button>
+
+    <button class="image-button button-column-1 button-row-7" type="button" id="museum" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Places/museum.png"/>
+      <div class="image-button-text-box">Museum</div>
+    </button>
+
+    <button class="image-button button-column-2 button-row-7" type="button" id="porch" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Places/porch.png"/>
+      <div class="image-button-text-box">Porch</div>
+    </button>
+
+    <button class="image-button button-column-3 button-row-7" type="button" id="restaurant" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Places/restaurant.png"/>
+      <div class="image-button-text-box">Restaurant</div>
+    </button>
+
+    <button class="image-button button-column-4 button-row-7" type="button" id="stadium" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Places/stadium.png"/>
+      <div class="image-button-text-box">Stadium</div>
+    </button>
+
+    <button class="image-button button-column-1 button-row-8" type="button" id="store" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Places/store.png"/>
+      <div class="image-button-text-box">Store</div>
+    </button>
+
+    <!-- <button class="image-button button-column-2 button-row-8" type="button" id="pizza" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Food/pizza.png"/>
+      <div class="image-button-text-box">Pizza</div>
+    </button>
+
+    <button class="image-button button-column-3 button-row-8" type="button" id="plum" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Food/plum.png"/>
+      <div class="image-button-text-box">Plum</div>
+    </button>
+
+    <button class="image-button button-column-4 button-row-8" type="button" id="potato" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Food/potato.png"/>
+      <div class="image-button-text-box">Potato</div>
+    </button>
+
+    <button class="image-button button-column-1 button-row-9" type="button" id="raspberry" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Food/raspberry.png"/>
+      <div class="image-button-text-box">Raspberry</div>
+    </button>
+
+    <button class="image-button button-column-2 button-row-9" type="button" id="sandwich" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Food/sandwich.png"/>
+      <div class="image-button-text-box">Sandwich</div>
+    </button>
+
+    <button class="image-button button-column-3 button-row-9" type="button" id="soda" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Food/soda.png"/>
+      <div class="image-button-text-box">Soda</div>
+    </button>
+
+    <button class="image-button button-column-4 button-row-9" type="button" id="strawberry" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Food/strawberry.png"/>
+      <div class="image-button-text-box">Strawberry</div>
+    </button>
+
+    <button class="image-button button-column-1 button-row-10" type="button" id="tomato" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Food/tomato.png"/>
+      <div class="image-button-text-box">Tomato</div>
+    </button>
+
+    <button class="image-button button-column-2 button-row-10" type="button" id="water" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Food/water.png"/>
+      <div class="image-button-text-box">Water</div>
+    </button>
+
+    <button class="image-button button-column-3 button-row-10" type="button" id="watermelon" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Food/watermelon.png"/>
+      <div class="image-button-text-box">Watermelon</div>
+    </button> -->
+
+    <div class="places-invisible-box"></div>
+
+  <script src="ImageVoice.js"></script>
+
+</body>
+
+</html>

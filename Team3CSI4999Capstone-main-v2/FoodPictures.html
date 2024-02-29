@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Capstone</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie Flower"/>
+  <link rel="stylesheet" href="Pictures.css"/>
+  <link rel="stylesheet" href="InvisibleBoxes.css"/>
+</head>
+
+<body>
+    <div class="header-bar">
+      <a href="./HomeScreen.html">
+        <button class="home-button">
+          <img class="home-icon-1" src="./images/home icon.webp" />
+          <div class="home-button-text">Home</div>
+      </button>
+      </a>
+      <div class="vocalizer">Vocalizer</div>
+    </div>
+    <div class="select-image">Select an image</div>
+    <div class="category-button-row">
+      <a href="./FoodPictures.html">
+        <button class="selected-category-button">Food</button>
+      </a>
+      <a href="./TransportationPictures.html">
+        <button class="category-button">Transport</button>
+      </a>
+      <a href="./PlacesPictures.html">
+        <button class="category-button">Places</button>
+      </a>
+      <a href="./AnimalPictures.html">
+        <button class="category-button">Animals</button>
+      </a>
+      <a href="./ObjectPictures.html">
+        <button class="category-button">Objects</button>
+      </a>
+    </div>
+    <button class="image-button button-column-1 button-row-1" type="button" id="apple juice" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Food/apple juice.png"/>
+      <div class="image-button-text-box">Apple Juice</div>
+    </button>
+
+    <button class="image-button button-column-2 button-row-1" type="button" id="apple" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Food/apple.png"/>
+      <div class="image-button-text-box">Apple</div>
+    </button>
+
+    <button class="image-button button-column-3 button-row-1" type="button" id="banana" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Food/banana.png"/>
+      <div class="image-button-text-box">Banana</div>
+    </button>
+
+    <button class="image-button button-column-4 button-row-1" type="button" id="black berry" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Food/blackberry.png"/>
+      <div class="image-button-text-box">Blackberry</div>
+    </button>
+
+    <button class="image-button button-column-1 button-row-2" type="button" id="blueberry" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Food/blueberry.png"/>
+      <div class="image-button-text-box">Blueberry</div>
+    </button>
+
+    <button class="image-button button-column-2 button-row-2" type="button" id="burger" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Food/burger.png"/>
+      <div class="image-button-text-box">Burger</div>
+    </button>
+
+    <button class="image-button button-column-3 button-row-2" type="button" id="cheese" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Food/cheese.png"/>
+      <div class="image-button-text-box">Cheese</div>
+    </button>
+
+    <button class="image-button button-column-4 button-row-2" type="button" id="cherry" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Food/cherry.png"/>
+      <div class="image-button-text-box">Cherry</div>
+    </button>
+
+    <button class="image-button button-column-1 button-row-3" type="button" id="chicken nuggets" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Food/chicken nuggets.png"/>
+      <div class="image-button-text-box">Chicken Nuggets</div>
+    </button>
+
+    <button class="image-button button-column-2 button-row-3" type="button" id="chips" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Food/chips.png"/>
+      <div class="image-button-text-box">Chips</div>
+    </button>
+
+    <button class="image-button button-column-3 button-row-3" type="button" id="corn" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Food/corn.png"/>
+      <div class="image-button-text-box">Corn</div>
+    </button>
+
+    <button class="image-button button-column-4 button-row-3" type="button" id="cucumber" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Food/cucumber.png"/>
+      <div class="image-button-text-box">Cucumber</div>
+    </button>
+
+    <button class="image-button button-column-1 button-row-4" type="button" id="green beans" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Food/green beans.png"/>
+      <div class="image-button-text-box">Green Beans</div>
+    </button>
+
+    <button class="image-button button-column-2 button-row-4" type="button" id="hot chocolate" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Food/hot chocolate.png"/>
+      <div class="image-button-text-box">Hot Chocolate</div>
+    </button>
+
+    <button class="image-button button-column-3 button-row-4" type="button" id="hot dog" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Food/hot dog.png"/>
+      <div class="image-button-text-box">Hot Dog</div>
+    </button>
+
+    <button class="image-button button-column-4 button-row-4" type="button" id="ketchup" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Food/ketchup.png"/>
+      <div class="image-button-text-box">Ketchup</div>
+    </button>
+
+    <button class="image-button button-column-1 button-row-5" type="button" id="lemonade" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Food/lemonade.png"/>
+      <div class="image-button-text-box">Lemonade</div>
+    </button>
+
+    <button class="image-button button-column-2 button-row-5" type="button" id="macaroni and cheese" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Food/macaroni and cheese.png"/>
+      <div class="image-button-text-box">Macaroni and Cheese</div>
+    </button>
+
+    <button class="image-button button-column-3 button-row-5" type="button" id="mayonnaise" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Food/mayonnaise.png"/>
+      <div class="image-button-text-box">Mayonnaise</div>
+    </button>
+
+    <button class="image-button button-column-4 button-row-5" type="button" id="milk" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Food/milk.png"/>
+      <div class="image-button-text-box">Milk</div>
+    </button>
+
+    <button class="image-button button-column-1 button-row-6" type="button" id="mustard" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Food/mustard.png"/>
+      <div class="image-button-text-box">Mustard</div>
+    </button>
+
+    <button class="image-button button-column-2 button-row-6" type="button" id="olive" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Food/olive.png"/>
+      <div class="image-button-text-box">Olive</div>
+    </button>
+
+    <button class="image-button button-column-3 button-row-6" type="button" id="onion" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Food/onion.png"/>
+      <div class="image-button-text-box">Onion</div>
+    </button>
+
+    <button class="image-button button-column-4 button-row-6" type="button" id="orange juice" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Food/orange juice.png"/>
+      <div class="image-button-text-box">Orange Juice</div>
+    </button>
+
+    <button class="image-button button-column-1 button-row-7" type="button" id="orange" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Food/orange.png"/>
+      <div class="image-button-text-box">Orange</div>
+    </button>
+
+    <button class="image-button button-column-2 button-row-7" type="button" id="peach" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Food/peach.png"/>
+      <div class="image-button-text-box">Peach</div>
+    </button>
+
+    <button class="image-button button-column-3 button-row-7" type="button" id="pear" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Food/pear.png"/>
+      <div class="image-button-text-box">Pear</div>
+    </button>
+
+    <button class="image-button button-column-4 button-row-7" type="button" id="peas" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Food/peas.png"/>
+      <div class="image-button-text-box">Peas</div>
+    </button>
+
+    <button class="image-button button-column-1 button-row-8" type="button" id="pickle" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Food/pickle.png"/>
+      <div class="image-button-text-box">Pickle</div>
+    </button>
+
+    <button class="image-button button-column-2 button-row-8" type="button" id="pizza" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Food/pizza.png"/>
+      <div class="image-button-text-box">Pizza</div>
+    </button>
+
+    <button class="image-button button-column-3 button-row-8" type="button" id="plum" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Food/plum.png"/>
+      <div class="image-button-text-box">Plum</div>
+    </button>
+
+    <button class="image-button button-column-4 button-row-8" type="button" id="potato" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Food/potato.png"/>
+      <div class="image-button-text-box">Potato</div>
+    </button>
+
+    <button class="image-button button-column-1 button-row-9" type="button" id="raspberry" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Food/raspberry.png"/>
+      <div class="image-button-text-box">Raspberry</div>
+    </button>
+
+    <button class="image-button button-column-2 button-row-9" type="button" id="sandwich" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Food/sandwich.png"/>
+      <div class="image-button-text-box">Sandwich</div>
+    </button>
+
+    <button class="image-button button-column-3 button-row-9" type="button" id="soda" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Food/soda.png"/>
+      <div class="image-button-text-box">Soda</div>
+    </button>
+
+    <button class="image-button button-column-4 button-row-9" type="button" id="strawberry" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Food/strawberry.png"/>
+      <div class="image-button-text-box">Strawberry</div>
+    </button>
+
+    <button class="image-button button-column-1 button-row-10" type="button" id="tomato" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Food/tomato.png"/>
+      <div class="image-button-text-box">Tomato</div>
+    </button>
+
+    <button class="image-button button-column-2 button-row-10" type="button" id="water" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Food/water.png"/>
+      <div class="image-button-text-box">Water</div>
+    </button>
+
+    <button class="image-button button-column-3 button-row-10" type="button" id="watermelon" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Food/watermelon.png"/>
+      <div class="image-button-text-box">Watermelon</div>
+    </button>
+
+    <button class="image-button button-column-4 button-row-10" type="button" id="chocolate" onclick="outputVoice(id)">
+      <img class="picture-rectangle" src="./images/Food/chocolate.png"/>
+      <div class="image-button-text-box">Chocolate</div>
+    </button>
+
+    <div class="food-invisible-box"></div>
+
+  <script src="ImageVoice.js"></script>
+
+</body>
+
+</html>
