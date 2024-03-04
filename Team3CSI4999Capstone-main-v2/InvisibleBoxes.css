@@ -1,11 +1,12 @@
 /*So that the last row of buttons is not 
 hugging the very bottom of the screen.
 Top positioning will vary based on how many
-rows there are.*/
+rows there are.
+Numbers roughly follow the equation for (x + 1) rows: y = 34.29x + 22.84*/
 
-.animals-invisible-box {
+.nature-invisible-box {
     background: rgba(0, 0, 0, 0);
-    top: 400%;
+    top: 605.77%;
     height: 1%;
     width: 100%;
     position: absolute;
@@ -13,7 +14,7 @@ rows there are.*/
 
 .food-invisible-box {
     background: rgba(0, 0, 0, 0);
-    top: 400%;
+    top: 845.8%;
     height: 1%;
     width: 100%;
     position: absolute;
@@ -21,7 +22,7 @@ rows there are.*/
 
 .object-invisible-box {
     background: rgba(0, 0, 0, 0);
-    top: 228.58%;
+    top: 674.35%;
     height: 1%;
     width: 100%;
     position: absolute;
