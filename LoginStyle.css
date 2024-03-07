@@ -18,16 +18,13 @@ h1 {
     justify-content: center;
     width: 500px;
     height: 500px;
-    display: flex;
-    align-content: auto;
-    align-items: auto;
     background-color: #D6CFBF;
     border: 2px solid black;
     margin: auto;
 }
 /*Just mostly test stuff to see if buttons work, will be adjusted*/
 button {
-    color: #FFFFFF;
+    background-color: #725E45;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
@@ -37,14 +34,16 @@ button {
 /*something is wrong with either this or the label*/
 input[type=text], input[type=password]{
     width: 100%;
-    padding 12px;
-    margin: 8px 0;
-    border: 1px solid #000000;
-    display: inline-block;
-    justify-content: center
+    margin: 10px 0;
+    border-radius: 5px;
+    padding: 15px 18px;
+    box-sizing: border-box;
 }
 /*The display is pretty bad, and I need to fix this, hopefully by tomorrow it'll be fixed*/
 label{
-    font-size: 20px;
+    text-align: left;
+    align-items: left; 
+    font-size: 25px;
     display: block;
+    position: relative;
 }
