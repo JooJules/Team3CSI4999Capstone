@@ -22,7 +22,7 @@ body { height: 100%; width: 100%; margin: 0; }
   color: #000000;
   text-align: left;
   font-family: 'Inter-Regular', sans-serif;
-  font-size: 40px;
+  font-size: 250%; /*40px*/
   font-weight: 400;
   left: 45%;
   position: absolute;
@@ -38,26 +38,30 @@ body { height: 100%; width: 100%; margin: 0; }
   color: #ffffff;
   text-align: center;
   font-family: "Indie Flower";
-  font-size: 96px;
+  font-size: 600%; /*96px*/
   font-weight: 400;
   position: absolute;
   width: 20%;
   height: 20%;
-  left: 36%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   top: 21.5%;
 }
 
 .select-image {
   background: #725e45;
   border-radius: 50px;
-  width: 32%;
+  width: 32vw;
   height: 12.2%;
   position: absolute;
-  left: 31%;
+  left: 0;
+  right: 0;
   top: 28.8%;
+  margin: 0 auto;
   -webkit-text-fill-color: #ffffff;
   font-family: 'Inter-Regular', sans-serif;
-  font-size: 64px;
+  font-size: 400%; /*64px*/
   font-weight: 400;
   display: flex;
   justify-content: center;
@@ -65,10 +69,10 @@ body { height: 100%; width: 100%; margin: 0; }
 }
 
 .category-button-row {
-  width: 80%;
+  width: 80vw;
   height: 5%;
   top: 47%;
-  margin-left: 1.5%;
+  margin-left: 4.0%;
   position: absolute;
   display: flex;
   justify-content: space-evenly;
@@ -86,7 +90,7 @@ body { height: 100%; width: 100%; margin: 0; }
   position: absolute;
   -webkit-text-fill-color: #ffffff;
   font-family: 'Inter-Regular', sans-serif;
-  font-size: 40px;
+  font-size: 250%; /*40px*/
   font-weight: 400;
   box-shadow: 0px 10px 4px 0px rgba(0, 0, 0, 0.25);
   display: flex;
@@ -103,8 +107,9 @@ body { height: 100%; width: 100%; margin: 0; }
   width: 13%;
   height: 115%;
   position: absolute;
+  -webkit-text-fill-color: #000000;
   font-family: 'Inter-Regular', sans-serif;
-  font-size: 40px;
+  font-size: 250%; /*40px*/
   font-weight: 400;
   box-shadow: 0px 10px 4px 0px rgba(0, 0, 0, 0.25);
   display: flex;
@@ -116,8 +121,9 @@ body { height: 100%; width: 100%; margin: 0; }
  .image-button-text-box {
   background: rgba(0, 0, 0, 0);
   text-align: center;
+  -webkit-text-fill-color: #000000;
   font-family: 'Inter-Regular', sans-serif;
-  font-size: 40px;
+  font-size: 250%; /*40px*/
   font-weight: 400;
   width: 100%;
   height: 28.4%;
@@ -135,7 +141,7 @@ body { height: 100%; width: 100%; margin: 0; }
   border-color: #000000;
   border-width: 1px;
   width: 54%;
-  width: 54%;
+  height: 54%;
   top: 17.6%;
   left: 23%;
   position: absolute;
@@ -156,13 +162,13 @@ body { height: 100%; width: 100%; margin: 0; }
   box-shadow: 0px 10px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.button-column-1 { left: 12.15%; }
+.button-column-1 { left: 15.15%; }
 
-.button-column-2 { left: 30.15%; }
+.button-column-2 { left: 33.15%; }
 
-.button-column-3 { left: 48.23%; }
+.button-column-3 { left: 51.23%; }
 
-.button-column-4 { left: 66.25%; }
+.button-column-4 { left: 69.25%; }
 
 /* To calculate the top position value for 
 row x, in terms of pixels, use the equation: y = 326x + 278 
