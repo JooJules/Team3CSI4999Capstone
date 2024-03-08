@@ -52,7 +52,7 @@ body { height: 100%; width: 100%; margin: 0; }
 .select-image {
   background: #725e45;
   border-radius: 50px;
-  width: 32vw;
+  width: 32%;
   height: 12.2%;
   position: absolute;
   left: 0;
@@ -61,7 +61,7 @@ body { height: 100%; width: 100%; margin: 0; }
   margin: 0 auto;
   -webkit-text-fill-color: #ffffff;
   font-family: 'Inter-Regular', sans-serif;
-  font-size: 400%; /*64px*/
+  font-size: 64px;
   font-weight: 400;
   display: flex;
   justify-content: center;
