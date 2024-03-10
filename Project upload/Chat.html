@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Capstone</title>
+  <link rel="stylesheet" href="Planner.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <!-- Header -->
+  <div class="header-bar">
+    <a href="./HomeScreen.html" class="home-button">
+      <img class="home-icon-1" src="./images/home icon.webp" />
+      <div class="home-button-text">Home</div>
+    </a>
+    <div class="vocalizer">Vocalizer</div>
+  </div>
+
+  <div class="planner">
+    <div class="message-container" id="message-container"></div> <!-- Container for messages -->
+    <div class="submit-form">
+      <div class="input">
+        <textarea name="input" id="input" cols="40" rows="3" placeholder="Enter a task to see the steps"></textarea>
+        <button id="btn">Submit</button>
+      </div>
+    </div>
+    <div class="loading-indicator" id="loading-indicator"> 
+      <div class="progress-bar" id="progress-bar"> Loading...</div>
+    </div>
+  </div>
+
+  <script src="chat.js"></script> 
+</body>
+</html>
