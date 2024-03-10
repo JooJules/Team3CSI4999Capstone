@@ -1,36 +1,65 @@
 window.onload = function () {
 
     const objectImages = [
+    "./images/Objects/Backpack.png",
     "./images/Objects/Baseball.png",
     "./images/Objects/Basketball.png",
     "./images/Objects/Bathtub.png",
+    "./images/Objects/Bean Bag Chair.png",
     "./images/Objects/Bed.png",
+    "./images/Objects/Bench.png",
     "./images/Objects/Blanket.png",
+    "./images/Objects/Blender.png",
     "./images/Objects/Book.png",
+    "./images/Objects/Boots.png",
     "./images/Objects/Bracelet.png",
     "./images/Objects/Cabinet.png",
+    "./images/Objects/Calculator.png",
+    "./images/Objects/Cap.png",
+    "./images/Objects/Cape.png",
     "./images/Objects/Chair.png",
+    "./images/Objects/Clock.png",
+    "./images/Objects/Coins.png",
     "./images/Objects/Colored Pencils.png",
     "./images/Objects/Computer.png",
     "./images/Objects/Couch.png",
     "./images/Objects/Crayon.png",
+    "./images/Objects/Crown.png",
     "./images/Objects/Desk.png",
     "./images/Objects/Doll.png",
     "./images/Objects/Door.png",
+    "./images/Objects/Dress.png",
+    "./images/Objects/Dresser.png",
+    "./images/Objects/Drill.png",
     "./images/Objects/Earrings.png",
+    "./images/Objects/Elevator.png",
     "./images/Objects/Eraser.png",
+    "./images/Objects/Fan.png",
+    "./images/Objects/Fire Hydrant.png",
+    "./images/Objects/Flag.png",
     "./images/Objects/Flip-Flops.png",
+    "./images/Objects/Flower Pot.png",
     "./images/Objects/Football.png",
     "./images/Objects/Fork.png",
     "./images/Objects/Fridge.png",
     "./images/Objects/Glasses.png",
     "./images/Objects/Glue.png",
     "./images/Objects/Hairbrush.png",
+    "./images/Objects/Hammer.png",
     "./images/Objects/Headphones.png",
     "./images/Objects/Key.png",
+    "./images/Objects/Keyboard.png",
     "./images/Objects/Knife.png",
+    "./images/Objects/Laptop.png",
+    "./images/Objects/Light Bulb.png",
+    "./images/Objects/Light Switch.png",
+    "./images/Objects/Lunchbox.png",
+    "./images/Objects/Mailbox.png",
     "./images/Objects/Marker.png",
+    "./images/Objects/Mirror.png",
     "./images/Objects/Money.png",
+    "./images/Objects/Mouse.png",
+    "./images/Objects/Nail.png",
     "./images/Objects/Napkin.png",
     "./images/Objects/Necklace.png",
     "./images/Objects/Notebook.png",
@@ -42,21 +71,32 @@ window.onload = function () {
     "./images/Objects/Pen.png",
     "./images/Objects/Pencil.png",
     "./images/Objects/Phone.png",
+    "./images/Objects/Piggy Bank.png",
     "./images/Objects/Pillow.png",
     "./images/Objects/Plate.png",
     "./images/Objects/Ring.png",
+    "./images/Objects/Road.png",
+    "./images/Objects/Roof.png",
+    "./images/Objects/Ruler.png",
     "./images/Objects/Scissors.png",
+    "./images/Objects/Screw.png",
+    "./images/Objects/Screwdriver.png",
     "./images/Objects/Seesaw.png",
     "./images/Objects/Shirt.png",
     "./images/Objects/Shoes.png",
+    "./images/Objects/Shopping Cart.png",
     "./images/Objects/Shower.png",
+    "./images/Objects/Sidewalk.png",
     "./images/Objects/Sink.png",
     "./images/Objects/Slide.png",
     "./images/Objects/Slippers.png",
     "./images/Objects/Soccer Ball.png",
     "./images/Objects/Socks.png",
     "./images/Objects/Spatula.png",
+    "./images/Objects/Sponge.png",
     "./images/Objects/Spoon.png",
+    "./images/Objects/Stairs.png",
+    "./images/Objects/Stool.png",
     "./images/Objects/Stove.png",
     "./images/Objects/Swing.png",
     "./images/Objects/Table.png",
@@ -64,15 +104,24 @@ window.onload = function () {
     "./images/Objects/Teddy Bear.png",
     "./images/Objects/Television.png",
     "./images/Objects/Tennis Ball.png",
+    "./images/Objects/Tiara.png",
+    "./images/Objects/Tire.png",
+    "./images/Objects/Tissue Box.png",
+    "./images/Objects/Toilet Paper.png",
     "./images/Objects/Toilet.png",
     "./images/Objects/Toothbrush.png",
     "./images/Objects/Toothpaste.png",
+    "./images/Objects/Top Hat.png",
     "./images/Objects/Towel.png",
     "./images/Objects/Toys.png",
     "./images/Objects/TV Remote.png",
+    "./images/Objects/Underwear.png",
+    "./images/Objects/Vase.png",
     "./images/Objects/Volley Ball.png",
     "./images/Objects/Wallet.png",
-    "./images/Objects/Window.png"
+    "./images/Objects/Water Bottle.png",
+    "./images/Objects/Window.png",
+    "./images/Objects/Wrench.png"
     ];
 
     const natureImages = [
@@ -293,6 +342,60 @@ window.onload = function () {
     "./images/Transportation/UFO.png"
     ];
 
+    const peopleImages = [
+        "./images/People/Aunt.png",
+        "./images/People/Boy.png",
+        "./images/People/Brother.png",
+        "./images/People/Cashier.png",
+        "./images/People/Chef.png",
+        "./images/People/Cousin.png",
+        "./images/People/Crossing Guard.png",
+        "./images/People/Dad.png",
+        "./images/People/Doctor.png",
+        "./images/People/Fire Fighter.png",
+        "./images/People/Fisherman.png",
+        "./images/People/Friend.png",
+        "./images/People/Girl.png",
+        "./images/People/Grandma.png",
+        "./images/People/Grandpa.png",
+        "./images/People/Knight.png",
+        "./images/People/Mom.png",
+        "./images/People/Nurse.png",
+        "./images/People/Police Officer.png",
+        "./images/People/President.png",
+        "./images/People/Prince.png",
+        "./images/People/Princess.png",
+        "./images/People/Principal.png",
+        "./images/People/Sister.png",
+        "./images/People/Soldier.png",
+        "./images/People/Teacher.png",
+        "./images/People/Uncle.png",
+        "./images/People/Wizard.png"
+    ];
+
+    const activityImages = [
+        "./images/Activities/Bathing.png",
+        "./images/Activities/Building.png",
+        "./images/Activities/Coloring.png",
+        "./images/Activities/Doing Homework.png",
+        "./images/Activities/Drawing.png",
+        "./images/Activities/Eating.png",
+        "./images/Activities/Hiking.png",
+        "./images/Activities/Painting.png",
+        "./images/Activities/Playing Outside.png",
+        "./images/Activities/Playing.png",
+        "./images/Activities/Reading.png",
+        "./images/Activities/Running.png",
+        "./images/Activities/Sitting.png",
+        "./images/Activities/Sleeping.png",
+        "./images/Activities/Standing.png",
+        "./images/Activities/Walking.png",
+        "./images/Activities/Watching a Movie.png",
+        "./images/Activities/Watching TV.png",
+        "./images/Activities/Writing.png"
+
+    ];
+
     let page = document.title;
     let substringStartPoint, images;
 
@@ -316,6 +419,14 @@ window.onload = function () {
         case "Places":
             images = placesImages;
             substringStartPoint = 16;
+            break;
+        case "People":
+            images = peopleImages;
+            substringStartPoint = 16;
+            break;
+        case "Activities":
+            images = activityImages;
+            substringStartPoint = 20;
             break;
     }
 

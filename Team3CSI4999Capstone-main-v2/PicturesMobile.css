@@ -61,6 +61,10 @@
       margin-left: 2%;
       top: 21.5%;
     }
+
+    #c-row-1 { top: 47%; }
+
+    #c-row-2 { top: 57%; }
   
     .selected-category-button {
       background: #725e45;
@@ -141,57 +145,57 @@
       box-shadow: 0px 10px 4px 0px rgba(0, 0, 0, 0.25);
     }
 
-    /*New math formula: y = 19.3x + 44.3*/
-    .button-row-1 { top: 63.6%; }
-    .button-row-2 { top: 82.9%; }
-    .button-row-3 { top: 102.2%; }
-    .button-row-4 { top: 121.5%; }
-    .button-row-5 { top: 140.8%; }
-    .button-row-6 { top: 160.1%; }
-    .button-row-7 { top: 179.4%; }
-    .button-row-8 { top: 198.7%; }
-    .button-row-9 { top: 218%; }
-    .button-row-10 { top: 237.3%; }
-    .button-row-11 { top: 256.6%; }
-    .button-row-12 { top: 275.9%; }
-    .button-row-13 { top: 295.2%; }
-    .button-row-14 { top: 314.5%; }
-    .button-row-15 { top: 333.8%; }
-    .button-row-16 { top: 353.1%; }
-    .button-row-17 { top: 372.4%; }
-    .button-row-18 { top: 391.7%; }
-    .button-row-19 { top: 411%; }
-    .button-row-20 { top: 430.3%; }
-    .button-row-21 { top: 449.6%; }
-    .button-row-22 { top: 468.9%; }
-    .button-row-23 { top: 488.2%; }
-    .button-row-24 { top: 507.5%; }
-    .button-row-25 { top: 526.8%; }
-    .button-row-26 { top: 546.1%; }
-    .button-row-27 { top: 565.4%; }
-    .button-row-28 { top: 584.7%; }
-    .button-row-29 { top: 604%; }
-    .button-row-30 { top: 623.3%; }
-    .button-row-31 { top: 642.6%; }
-    .button-row-32 { top: 661.9; }
-    .button-row-33 { top: 681.2; }
-    .button-row-34 { top: 700.5%; }
-    .button-row-35 { top: 719.8%; }
-    .button-row-36 { top: 739.1%; }
-    .button-row-37 { top: 758.4%; }
-    .button-row-38 { top: 777.7%; }
-    .button-row-39 { top: 797%; }
-    .button-row-40 { top: 816.3%; }
-    .button-row-41 { top: 835.6%; }
-    .button-row-42 { top: 854.9%; }
-    .button-row-43 { top: 874.3%; }
-    .button-row-44 { top: 893.5%; }
-    .button-row-45 { top: 912.8%; }
-    .button-row-46 { top: 932.1%; }
-    .button-row-47 { top: 951.4%; }
-    .button-row-48 { top: 970.7%; }
-    .button-row-49 { top: 990%; }
-    .button-row-50 { top: 1009.3%; }
+    /*New math formula: y = 19.3x + 54.3*/
+    .button-row-1 { top: 73.6%; }
+    .button-row-2 { top: 92.9%; }
+    .button-row-3 { top: 112.2%; }
+    .button-row-4 { top: 131.5%; }
+    .button-row-5 { top: 150.8%; }
+    .button-row-6 { top: 170.1%; }
+    .button-row-7 { top: 189.4%; }
+    .button-row-8 { top: 208.7%; }
+    .button-row-9 { top: 228%; }
+    .button-row-10 { top: 247.3%; }
+    .button-row-11 { top: 266.6%; }
+    .button-row-12 { top: 285.9%; }
+    .button-row-13 { top: 305.2%; }
+    .button-row-14 { top: 324.5%; }
+    .button-row-15 { top: 343.8%; }
+    .button-row-16 { top: 363.1%; }
+    .button-row-17 { top: 382.4%; }
+    .button-row-18 { top: 401.7%; }
+    .button-row-19 { top: 421%; }
+    .button-row-20 { top: 440.3%; }
+    .button-row-21 { top: 459.6%; }
+    .button-row-22 { top: 478.9%; }
+    .button-row-23 { top: 498.2%; }
+    .button-row-24 { top: 517.5%; }
+    .button-row-25 { top: 536.8%; }
+    .button-row-26 { top: 556.1%; }
+    .button-row-27 { top: 575.4%; }
+    .button-row-28 { top: 594.7%; }
+    .button-row-29 { top: 614%; }
+    .button-row-30 { top: 633.3%; }
+    .button-row-31 { top: 652.6%; }
+    .button-row-32 { top: 671.9; }
+    .button-row-33 { top: 691.2; }
+    .button-row-34 { top: 710.5%; }
+    .button-row-35 { top: 729.8%; }
+    .button-row-36 { top: 749.1%; }
+    .button-row-37 { top: 768.4%; }
+    .button-row-38 { top: 787.7%; }
+    .button-row-39 { top: 807%; }
+    .button-row-40 { top: 826.3%; }
+    .button-row-41 { top: 845.6%; }
+    .button-row-42 { top: 864.9%; }
+    .button-row-43 { top: 884.3%; }
+    .button-row-44 { top: 903.5%; }
+    .button-row-45 { top: 922.8%; }
+    .button-row-46 { top: 942.1%; }
+    .button-row-47 { top: 961.4%; }
+    .button-row-48 { top: 980.7%; }
+    .button-row-49 { top: 1000%; }
+    .button-row-50 { top: 1019.3%; }
 
     .nature-invisible-box { display: none; }
     
@@ -202,6 +206,10 @@
     .places-invisible-box { display: none; }
     
     .transportation-invisible-box { display: none; }
+
+    .people-invisible-box { display: none; }
+
+    .activity-invisible-box { display: none; }
 }
 
 /* @media only screen and (max-width: 639px) {

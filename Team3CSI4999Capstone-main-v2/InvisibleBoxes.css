@@ -2,11 +2,11 @@
 hugging the very bottom of the screen.
 Top positioning will vary based on how many
 rows there are.
-Numbers roughly follow the equation for (x + 1) rows: y = 34.29x + 22.84*/
+Numbers roughly follow the equation for (x + 1) rows: y = 34.29x + 32.84*/
 
 .nature-invisible-box {
     background: rgba(0, 0, 0, 0);
-    top: 605.77%;
+    top: 615.77%;
     height: 1%;
     width: 100%;
     position: absolute;
@@ -14,7 +14,7 @@ Numbers roughly follow the equation for (x + 1) rows: y = 34.29x + 22.84*/
 
 .food-invisible-box {
     background: rgba(0, 0, 0, 0);
-    top: 845.8%;
+    top: 855.8%;
     height: 1%;
     width: 100%;
     position: absolute;
@@ -22,7 +22,7 @@ Numbers roughly follow the equation for (x + 1) rows: y = 34.29x + 22.84*/
 
 .object-invisible-box {
     background: rgba(0, 0, 0, 0);
-    top: 674.35%;
+    top: 1130.12%;
     height: 1%;
     width: 100%;
     position: absolute;
@@ -30,7 +30,7 @@ Numbers roughly follow the equation for (x + 1) rows: y = 34.29x + 22.84*/
 
 .places-invisible-box {
     background: rgba(0, 0, 0, 0);
-    top: 331.45%;
+    top: 341.45%;
     height: 1%;
     width: 100%;
     position: absolute;
@@ -38,7 +38,23 @@ Numbers roughly follow the equation for (x + 1) rows: y = 34.29x + 22.84*/
 
 .transportation-invisible-box {
     background: rgba(0, 0, 0, 0);
-    top: 262.87%;
+    top: 272.87%;
+    height: 1%;
+    width: 100%;
+    position: absolute;
+}
+
+.people-invisible-box {
+    background: rgba(0, 0, 0, 0);
+    top: 307.16%;
+    height: 1%;
+    width: 100%;
+    position: absolute;
+}
+
+.activity-invisible-box {
+    background: rgba(0, 0, 0, 0);
+    top: 238.58%;
     height: 1%;
     width: 100%;
     position: absolute;
