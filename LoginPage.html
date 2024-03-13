@@ -3,21 +3,24 @@
 
 <head>
     <link rel="stylesheet" href="LoginStyle.css">
-    <title>Login Page</title>
 </head>
     
 <body>
     <!-- At the moment working on the css file will work more on this when I fix it, I swear I will not leave this so barebones/wrong-->
     <h1>Please Login Here</h1>
-    <!--<div class="box">-->
-        <label for="uname"><b>Username:</b></label>
+    <!--<div class="box"-->
+        <label for="username"><b>Username:</b></label>
         <input type="text" placeholder="Username" name = "uname" required>
-        <br><br>
         <label for="password"><b>Password:</b></label>
-        <input type="password" placeholder="Password" name="password">
+        <input type="password" placeholder="Password" name="password" required>
     <!--Login moves to homescreen-->
         <a href="HomeScreen.html">
             <button>Login</button>
+        </a>
+    
+        <h2>Don't have an account?</h2>
+        <a href="SignupPage.html">
+            <button>Sign Up</button>
         </a>
     <!--</div>-->
     
