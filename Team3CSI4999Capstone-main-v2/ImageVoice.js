@@ -1,24 +1,32 @@
-function outputVoice(parameter) {
-    if ('speechSynthesis' in window) {
-        const synth = window.speechSynthesis;
-      
-        // Get the first `en` language voice in the list
-        var voice = synth.getVoices().filter(function (voice) {
-          return voice.lang === 'en';
-        })[0];
-      
-        // Create an utterance object
-        var utterance = new SpeechSynthesisUtterance(parameter);
-      
-        // Set utterance properties
-        utterance.voice = voice;
-        utterance.pitch = 2;
-        utterance.rate = 1.25;
-        utterance.volume = 0.8;
-      
-        // Speak the utterance
-        synth.speak(utterance);
-      } else {
-        console.log('Text-to-speech not supported.');
-      }
+const synth = window.speechSynthesis;
+let utterance = new SpeechSynthesisUtterance();
+
+function outputVoice(parameter) { 
+    
+    findVoice();
+    //For Chrome. The browser needs an event to fire for the getVoices() function.
+    if (speechSynthesis.onvoiceschanged !== undefined) {
+      speechSynthesis.onvoiceschanged = findVoice;
+    }
+    
+    utterance.pitch = 2;
+    utterance.rate = 1;
+    utterance.volume = 1.0;
+    utterance.text = parameter;
+
+    // Speak the utterance
+    synth.speak(utterance);
+}
+
+function findVoice () {
+  let voices = synth.getVoices();
+		
+  for (let i = 0; i < voices.length; i++) {
+    if ((voices[i].name === "Microsoft Zira - English (United States)") || //Chrome and Edge Voice
+        (voices[i].name === "Samantha") ||                                 //Safari Voice
+        (voices[i].name === "English (America)+Steph")) {                  //FireFox Voice 
+      utterance.voice = voices[i];
+      break;
+    }
+  } 
 }
