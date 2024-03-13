@@ -68,10 +68,17 @@ body { height: 100%; width: 100%; margin: 0; }
   align-items: center;
 }
 
+.category-button:hover, 
+.selected-category-button:hover, 
+.image-button:hover,  
+.home-button:hover {
+    transition: 0.2s ease-in;
+    background-image: linear-gradient(rgb(0 0 0/40%) 0 0);
+}
+
 .category-button-row {
   width: 80vw;
   height: 5%;
-  /* top: 47%; */
   margin-left: 4.0%;
   position: absolute;
   display: flex;
