@@ -38,7 +38,7 @@ Numbers roughly follow the equation for (x + 1) rows: y = 34.29x + 32.84*/
 
 .transportation-invisible-box {
     background: rgba(0, 0, 0, 0);
-    top: 272.87%;
+    top: 410.03%;
     height: 1%;
     width: 100%;
     position: absolute;
@@ -46,7 +46,7 @@ Numbers roughly follow the equation for (x + 1) rows: y = 34.29x + 32.84*/
 
 .people-invisible-box {
     background: rgba(0, 0, 0, 0);
-    top: 341.45%;
+    top: 410.03%;
     height: 1%;
     width: 100%;
     position: absolute;
@@ -54,7 +54,7 @@ Numbers roughly follow the equation for (x + 1) rows: y = 34.29x + 32.84*/
 
 .activity-invisible-box {
     background: rgba(0, 0, 0, 0);
-    top: 238.58%;
+    top: 410.03%;
     height: 1%;
     width: 100%;
     position: absolute;
