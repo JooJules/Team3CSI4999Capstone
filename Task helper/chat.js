@@ -32,7 +32,7 @@ try {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      'Authorization': 'Bearer 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', // Replace with your ChatGPT API key
+      'Authorization': 'Bearer API KEY', // Replace with your ChatGPT API key
     },
     body: JSON.stringify({
       model: 'gpt-3.5-turbo',
@@ -131,7 +131,7 @@ for (let i = 0; i < steps.length; i++) {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': 'Bearer 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', // Replace with your DALL·E API key
+        'Authorization': 'Bearer API KEY', // Replace with your DALL·E API key
       },
       body: JSON.stringify({
         prompt: "Generate a 2-D cartoon image to help describe this step in the process of" + inputText+ ":" + prompt
