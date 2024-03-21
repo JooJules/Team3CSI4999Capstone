@@ -64,7 +64,7 @@ body {
   font-size: 96px;
   font-weight: 400;
   position: absolute;
-  left: 36%;
+  left: 42%;
   top: 21.5%;
   display: flex;
   align-items: center;
@@ -304,6 +304,7 @@ max-width: 40%;
     border-radius: 10px; 
   }
   .clear{
+    border-radius: 10px; 
     height:5.5%;
     width: 5.2%;
     left: 73%; 
@@ -472,6 +473,53 @@ body {
   overflow-x: hidden;
 }
 
+@media (max-width: 1000px) and (orientation: landscape) {
+  .textInput{
+    top:28%
+  }
+ .virtualkeyboard{
+  top:30%
+ }
+  .clear-icon{
+    align-items: center;
+    width: 100% !important;
+   
+    
+  }
+  .clear{
+   
+    width: 7%!important;
+    left: 75%; 
+    top: 28%;
+   
+     border-radius: 10px; 
+   }
 
+
+  .speakButton{
+    width: 8%;
+    left:82.5%;
+    top:28%;
+  }
+  .speak-icon-1{
+    width: 75%;
+  }
+   
+ .vocalizer{
+   font-size: 3.0em;
+  left:20%;
+  top: 15% !important;
+ }
+  .header-bar{
+    width: 200%;
+   overflow-x: auto;
+  
+  }
+  .home-button{
+    width:5%;
+  }
+
+  
+  }
 
 
