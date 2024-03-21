@@ -1,21 +1,33 @@
-html { background-color: #b7946a; height: 100%; width: 100%; margin: 0; }
+html { 
+  background-color: #b7946a; 
+  height: 100%; 
+  width: 100%; 
+  margin: 0; 
+}
 
 body { 
   height: 100%; 
   width: 100%; 
   margin: 0; 
   overflow: hidden; /* Prevent scrolling */
-  touch-action: manipulation;
+  
 }
 
 .header-bar { 
   background: #4e4d49; 
   width: 100%; 
   height: 22.5%; 
-  position: relative; 
+  position: fixed; 
+
   top: 0%; 
   left: 0%; 
 }
+
+/* .headerBackground{
+  background: #4e4d49;
+  top: -30%;
+  width: 30%;
+} */
 
 .home-button {
   background: #d5cfbf;
@@ -78,7 +90,8 @@ body {
 }
 
 .textarea-container {
-  position: relative;
+  border-radius: 25px;
+  
 }
 
 .textarea-container textarea {
@@ -93,6 +106,7 @@ body {
   background-position: calc(100% - 20px) center; /* Adjust the position of the arrow */
   background-size: 30px; /* Adjust the size of the arrow */
   width: calc(100% - 0px);
+  border-radius: 25px;
 }
 
 .arrow-button {
@@ -123,6 +137,7 @@ body {
   transform: translate(-50%, -50%);
   padding: 10px;
   overflow-y: auto;
+  border-radius: 25px
 }
 
 .message-box {
@@ -136,11 +151,13 @@ body {
 .user-message {
   background-color: lightblue;
   text-align: left;
+  border-radius: 25px;
 }
 
 .bot-response {
   background-color: lightgreen;
   text-align: left;
+  border-radius: 25px;
 }
 
 @media (max-width: 800px) {
@@ -161,17 +178,19 @@ body {
   }
 
   .vocalizer {
-    left: 50%; 
+    left: 55%; 
     transform: translateX(-50%);
     font-size: 5.0em; 
   }
 
   .input {
-    width: 96%;
+    width: 92%;
+    bottom: 5%;
+    overflow: hidden;
   }
 
   .message-container {
-    width: 90.5%;
+    width: 85%;
   }
 }
 
@@ -201,3 +220,8 @@ body {
 }
 
 
+/* keep speaker button and step on same line*/
+.step-container {
+  display: flex;
+  align-items: center; 
+}
