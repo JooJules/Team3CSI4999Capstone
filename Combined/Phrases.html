@@ -1,80 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Phrases</title>
-        <style>
-            body {
-                background-color: #B7946A;
-            }
-
-            .top-box {
-                background: #4e4d49;
-                width: 1429px;
-                height: 100px;
-                position: absolute;
-                inset: 0;
-            }
-
-            #title {
-                color: #ffffff;
-                font-family: "IndieFlower-Regular", sans-serif;
-                font-size: 50px;
-                font-weight: 400;
-                position: absolute;
-                left: 425px;
-                width: 592px;
-                height: 25px;
-                display: flex;
-                align-items: center;
-                justify-content: flex-start;
-            }
-
-            .Phrases {
-                position: relative;
-                left: 50px;
-            }
-
-            #PhraseTitle {
-                position: relative;
-                top: 70px;
-                left: 50px;
-            }
-
-            .Phrase-list {
-                width: 200px;
-                height: 500px;
-                overflow-y: auto;
-                position: relative;
-                top: 50px;
-            }
-
-            .Phrase-list a {
-                background-color:#FFFFFF;
-                color: black;
-                display: block;
-                padding: 12px;
-                text-decoration: none;
-            }
-
-            .Phrase-list a:hover {
-                background-color: #6b6a6a4f;
-            }
-
-            #back-button {
-                background: #d5cfbf;
-                border-radius: 100px;
-                height: 66px;
-                width: 240px;
-                position: relative;
-                top: 10px;
-                font-size: 40px;
-                font-weight: bold;
-            }
-
-            #back-button:hover {
-                background: #d5cfbf88;
-            }
-        </style>
+        <script type="text/javascript" src="script.js"></script>
+        <link rel="stylesheet" href="Phrases.css">
     </head>
     <body>
         <div class="top-box">
@@ -88,16 +19,17 @@
         <div class="Phrases">
             <h4 id="PhraseTitle">Phrases</h4>
             <div class="Phrase-list">
-                <a href="#">Hello</a>
-                <a href="#">Goodbye</a>
-                <a href="#">Thank you</a>
-                <a href="#">Your welcome</a>
-                <a href="#">Sorry</a>
-                <a href="#">Excuse me</a>
-                <a href="#">Good morning</a>
-                <a href="#">Good afternoon</a>
-                <a href="#">Where is____?</a>
+                <div id="list" onclick="instruction('hello')">Hello</div>
+                <div id="list" onclick="instruction('goodbye')">Goodbye</div>
+                <div id="list" onclick="instruction('thank you')">Thank you</div>
+                <div id="list" onclick="instruction('your welcome')">Your welcome</div>
+                <div id="list" onclick="instruction('sorry')">Sorry</div>
+                <div id="list" onclick="instruction('excuse me')">Excuse me</div>
+                <div id="list" onclick="instruction('good morning')">Good morning</div>
+                <div id="list" onclick="instruction('good afternoon')">Good afternoon</div>
+                <div id="list" onclick="instruction('where')">Where is____?</div>
         </div>
        </div>
+       <div id="text-box"></div>
     </body>
 </html>
