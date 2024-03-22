@@ -1,15 +1,15 @@
-let capsLockEnabled = false;
-let currentKeyboard = 1;
-let lastKnownCapsLockState = false;
-const synth = window.speechSynthesis;
-let utterance = new SpeechSynthesisUtterance();
+let capsLockEnabled = false; //capslock is off when keybored is called first
+let currentKeyboard = 1; //keep track of if user was on capslock or lowercase keybored
+let lastKnownCapsLockState = false; //also helps keep track of capslock state
+const synth = window.speechSynthesis; //API for audio
+let utterance = new SpeechSynthesisUtterance(); //API for audio
 
-function toggleKeyboard() {
+function toggleKeyboard() { //function to display kybored
   var textInput = document.getElementById('textInput');
   var keyboard = document.getElementById('virtualKeyboard');
 
   keyboard.innerHTML = "";
-
+//both uppercase and lowercasekeybored are stored in array's
   const keysLayout = (capsLockEnabled) ? [
     ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '_', '+'],
     ['Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P', '{', '}', '|'],
@@ -24,11 +24,11 @@ function toggleKeyboard() {
     ['capslock', ' ', 'backspace']
   ];
 
-  keysLayout.forEach(row => {
+  keysLayout.forEach(row => { //create keybored layout on screen
     row.forEach(key => {
       var button = document.createElement('button');
 
-      if (key === ' ') {
+      if (key === ' ') { //display space on spacebar
         button.textContent = 'space';
         button.onclick = function () {
           onKeyPress(' ');
@@ -41,7 +41,8 @@ function toggleKeyboard() {
       }
 
       button.className = 'keyboard-button';
-
+ 
+//create special key ID to use for CSS
       if (key === ' ' || key === 'backspace' || key === 'capslock') {
         button.className += ' special-key';
       }
@@ -57,16 +58,16 @@ function toggleKeyboard() {
   keyboard.style.display = 'block';
 }
 
-function toggleCase() {
+function toggleCase() {    //if keybored is closed, open back up on last keybored used
   currentKeyboard = (currentKeyboard === 1) ? 2 : 1;
   toggleKeyboard();
-  document.getElementById('textInput').focus(); // Set focus back to the text input
+  document.getElementById('textInput').focus(); 
 }
 
-function onKeyPress(key) {
+function onKeyPress(key) {  //what to do if a key is pressed
   var textInput = document.getElementById('textInput');
 
-  if (key === 'backspace') {
+  if (key === 'backspace') {  //what to do for special keys
     textInput.value = textInput.value.slice(0, -1);
   } else if (key === 'capslock') {
     capsLockEnabled = !capsLockEnabled;
@@ -77,7 +78,9 @@ function onKeyPress(key) {
   }
 }
 
-function updateKeyboardLabels() {
+//update keybored button lables, should be redundant, but there were errors when I took 
+//it out
+function updateKeyboardLabels() { 
   var buttons = document.querySelectorAll('#virtualKeyboard button');
   buttons.forEach(button => {
     var key = button.textContent.toLowerCase();
@@ -88,6 +91,7 @@ function updateKeyboardLabels() {
   });
 }
 
+//makes sure buttons type capital letetrs/symbols if capslock is enabled
 function applyCapsLockStyle() {
   var capsLockButton = document.querySelector('button[data-key="capslock"]');
   if (capsLockEnabled) {
@@ -113,11 +117,13 @@ document.addEventListener('keydown', function (event) {
   onPhysicalKeyPress(event);
 });
 
+//play audio to user when speak button clicked
 document.getElementById('speakButton').addEventListener('click', function (event) {
   event.preventDefault();  // Prevent the default behavior of the click event
   speakText(document.getElementById('textInput').value);
 });
 
+//check if user has pressed their physical keybored. 
 document.addEventListener('keyup', function (event) {
   var pressedKey = event.key.toLowerCase();
   var virtualButton = document.querySelector('.keyboard-button[data-key="' + pressedKey + '"]');
@@ -127,6 +133,7 @@ document.addEventListener('keyup', function (event) {
   }
 });
 
+//light up keys on virtual keybored when physcial key pressed
 function onPhysicalKeyPress(event) {
   var pressedKey = event.key.toLowerCase();
   var virtualButton = document.querySelector('.keyboard-button[data-key="' + pressedKey + '"]');
@@ -140,6 +147,7 @@ function onPhysicalKeyPress(event) {
   }
 }
 
+//clear text box when clear button clicked
 function deleteContents() {
   var textBox = document.getElementById('textInput');
   textBox.value = '';
@@ -148,6 +156,7 @@ function deleteContents() {
 document.getElementById('clear').addEventListener('click', function () {
   deleteContents();
 });
+
 
 document.addEventListener('keydown', function (event) {
   var isCapsLockActive = event.getModifierState('CapsLock');
@@ -158,12 +167,13 @@ document.addEventListener('keydown', function (event) {
     lastKnownCapsLockState = isCapsLockActive;
   }
 });
-
+//check if user has pressed capslock
 document.addEventListener('keyup', function (event) {
   if (event.getModifierState('CapsLock')) {
     lastKnownCapsLockState = capsLockEnabled;
   }
 });
+
 
 document.addEventListener('click', function (event) {
   var textInput = document.getElementById('textInput');
@@ -178,6 +188,8 @@ document.addEventListener('click', function (event) {
   }
 });
 
+
+//use specific voice for audio
 function speakText(text) {
   findVoice();
   utterance.pitch = 2;
