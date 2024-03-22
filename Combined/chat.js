@@ -59,7 +59,7 @@ btn.addEventListener('click', async () => {
                 if (step.trim() !== '') {
                     const speakButton = document.createElement('button');
                     // Image for audio 
-                    speakButton.innerHTML = '<img src="images/speaker.jpg" alt="Speak" width="20" height="20">';
+                    speakButton.innerHTML = '<img src="images/speaker.png" alt="Speak" width="20" height="20">';
                     speakButton.addEventListener('click', () => {
                         outputVoice(step);
                     });
