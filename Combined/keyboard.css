@@ -83,15 +83,24 @@ body {
 
 
 
+/* hover transitions */
+.keyboard-button:hover{
+  transition: 0.2s ease-in;
+  background-image: linear-gradient(rgb(0 0 0/40%) 0 0);
+}
+.home-button:hover {
+  transition: 0.2s ease-in;
+  background-image: linear-gradient(rgb(0 0 0/40%) 0 0);
+}
+.clear:hover{
+  transition: 0.2s ease-in;
+  background-image: linear-gradient(rgb(0 0 0/40%) 0 0);
+}
 
-
-
-
-
-
-
-
-
+.speakButton:hover{
+  transition: 0.2s ease-in;
+  background-image: linear-gradient(rgb(0 0 0/40%) 0 0);
+}
 
  
 
