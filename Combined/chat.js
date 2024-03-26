@@ -19,7 +19,7 @@ btn.addEventListener('click', async () => {
     // Display loading bar
     const loadingIndicator = document.getElementById("loading-indicator");
     const progressBar = document.getElementById("progress-bar");
-    loadingIndicator.style.display = "block"; // Show loading indicator
+    //loadingIndicator.style.display = "block"; // Show loading indicator
 
     // Update progress bar to indicate loading
     updateProgressBar(20); 
@@ -39,6 +39,7 @@ btn.addEventListener('click', async () => {
                 max_tokens: 1000
             })
         });
+        updateProgressBar(50);
 
         if (!response.ok) {
             throw new Error('Server error');
@@ -59,7 +60,7 @@ btn.addEventListener('click', async () => {
                 if (step.trim() !== '') {
                     const speakButton = document.createElement('button');
                     // Image for audio 
-                    speakButton.innerHTML = '<img src="images/speaker.png" alt="Speak" width="20" height="20">';
+                    speakButton.innerHTML = '<img src="images/speaker.png" alt="Speak" width="15" height="15">';
                     speakButton.addEventListener('click', () => {
                         outputVoice(step);
                     });
@@ -102,6 +103,7 @@ btn.addEventListener('click', async () => {
             }
 
             // Error messages
+            
             parentDiv.appendChild(botResponseElement);
             console.log('Bot message:', botResponse);
         } else {
@@ -110,6 +112,7 @@ btn.addEventListener('click', async () => {
     } catch (error) {
         console.error('Error:', error.message);
     } finally {
+        updateProgressBar(90);
         // Hide loading indicator after completion or error
         loadingIndicator.style.display = "none"; // Hide loading indicator
         progressBar.style.width = "0"; // Reset progress bar width
@@ -170,6 +173,11 @@ function updateProgressBar(progress) {
     progressBar.style.width = `${progress}%`;
 }
 
+
+
+
+
+//keyboard
 function handleKeyboardVisibility() {
   const headerHeight = document.querySelector('.header-bar').offsetHeight;
   let isKeyboardVisible = false;
@@ -203,11 +211,11 @@ function handleKeyboardVisibility() {
 handleKeyboardVisibility();
 
 
-
+/* 
 // Prevent scrolling above the header
 window.addEventListener('scroll', function() {
   var headerHeight = document.querySelector('.header-bar').offsetHeight;
   if (window.scrollY < headerHeight) {
       window.scrollTo(0, headerHeight);
   }
-});
+}); */
