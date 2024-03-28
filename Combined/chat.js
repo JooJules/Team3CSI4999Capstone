@@ -10,7 +10,7 @@ btn.addEventListener('click', async () => {
     }
 
     const userMessage = document.createElement('div');
-    userMessage.textContent = "Can you show me step by step how to complete the following task: " + inputText;
+    userMessage.textContent = "Task: " + inputText;
     userMessage.classList.add("message-box", "user-message");
     parentDiv.appendChild(userMessage);
 
@@ -19,6 +19,8 @@ btn.addEventListener('click', async () => {
     // Display loading bar
     const loadingIndicator = document.getElementById("loading-indicator");
     const progressBar = document.getElementById("progress-bar");
+    const loadingCircle = document.getElementById("loading-circle");
+    loadingCircle.style.display = "block";
     //loadingIndicator.style.display = "block"; // Show loading indicator
 
     // Update progress bar to indicate loading
@@ -116,6 +118,8 @@ btn.addEventListener('click', async () => {
         // Hide loading indicator after completion or error
         loadingIndicator.style.display = "none"; // Hide loading indicator
         progressBar.style.width = "0"; // Reset progress bar width
+
+        loadingCircle.style.display = "none";
         console.log('Loading indicator hidden');
     }
 });
@@ -219,3 +223,26 @@ window.addEventListener('scroll', function() {
       window.scrollTo(0, headerHeight);
   }
 }); */
+
+
+
+/* const systhesis = window.speechSynthesis;
+const utterance = new SpeechSynthesisUtterance ('Hello');
+let isPlaying = false;
+
+this.systhesis.speak(utterance);
+isPlaying = true;
+*/
+
+//stops chrome from stopping after 14 sec
+var synthesisInerval = setInterval(() => {
+    if (!isPlaying){
+            clearInterval(synthesisInterval);
+    }else{
+        systhesis.resume();
+    }
+}, 14000);
+
+utterance.onend = () => {
+    isPlaying = false;
+} 
