@@ -5,6 +5,7 @@
   <link rel="stylesheet" href="Planner.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
+  
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie Flower"/>
   <meta charset="UTF-8">
@@ -22,7 +23,22 @@
   </div>
 
   <div class="planner">
-    <div class="message-container" id="message-container"></div> <!-- Container for messages -->
+    <div class="message-container" id="message-container">
+
+      <div class="loading-wrapper">
+        <div class="loading-circle" id="loading-circle"></div>
+        <div class="loading-text">Loading...</div>
+      </div>
+
+    <!--   <div class="loading-circle" id = "loading-circle"> 
+        <ins>Loading...</ins> 
+      </div> -->
+
+      
+
+
+
+    </div> <!-- Container for messages -->
     <div class="submit-form">
       <div class="input">
         <div class="textarea-container">
@@ -40,6 +56,8 @@
       <div class="progress-bar" id="progress-bar"> Loading...</div>
     </div>
   </div>
+
+  
 
   <script src="chat.js"></script> 
   <script src="imageVoice.js"></script>
