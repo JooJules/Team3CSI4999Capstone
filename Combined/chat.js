@@ -127,43 +127,7 @@ btn.addEventListener('click', async () => {
 
 
 
-// Image generation
-/* async function generateImage(prompt, retryCount = 3) {// Try to load image up to 3 times
-  const inputText = document.getElementById("input").value.trim();
-  try {
 
-    const imageResponse = await fetch('https://api.openai.com/v1/images/generations', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': 'Bearer APK_KEY', // Replace with the DALL·E API key
-      },
-      body: JSON.stringify({
-        prompt: "Generate a 2-D cartoon image to help describe this step in the process of" + inputText+ ":" + prompt
-      })
-    });
-
-    if (!imageResponse.ok) {
-      throw new Error('Image generation error');
-    }
-
-    const imageData = await imageResponse.json();
-    console.log('DALL·E image response:', imageData);
-
-    const imageUrl = imageData.data[0].url;
-    // Update progress bar to indicate image generation
-    updateProgressBar(50); 
-    return imageUrl;
-  } catch (error) {
-    console.error('Error generating image:', error);
-    if (retryCount > 0) {
-      console.log(`Retrying (${retryCount} attempts left)`);
-      return generateImage(prompt, retryCount - 1); // Retry to load image with one less attempt
-    } else {
-      throw new Error('Failed to generate image after multiple attempts');
-    }
-  }
-} */
 
 
 
