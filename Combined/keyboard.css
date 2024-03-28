@@ -345,7 +345,7 @@ max-width: 40%;
     
     grid-auto-rows: minmax(50px, auto);
     flex-wrap: wrap;
-    justify-content: center; 
+    justify-content: center;
     gap: 10px; 
    
   }
@@ -389,7 +389,7 @@ width:110%
     border-radius: 10px; 
     height:5.5%;
     width: 5.2%;
-    left: 79.3%; 
+    left: 79.1%; 
     top: 30%;
      font-size: 1.2em;
   }
