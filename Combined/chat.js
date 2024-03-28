@@ -19,7 +19,7 @@ btn.addEventListener('click', async () => {
     // Display loading bar
     const loadingIndicator = document.getElementById("loading-indicator");
     const progressBar = document.getElementById("progress-bar");
-    const loadingCircle = document.getElementById("loading-circle");
+    const loadingCircle = document.getElementById("loading-wrapper");
     loadingCircle.style.display = "block";
     //loadingIndicator.style.display = "block"; // Show loading indicator
 
