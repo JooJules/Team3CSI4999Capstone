@@ -345,8 +345,8 @@ max-width: 40%;
     
     grid-auto-rows: minmax(50px, auto);
     flex-wrap: wrap;
-    justify-content: center; /* Center keys horizontally */
-    gap: 10px; /* Adjust gap between keys */
+    justify-content: center; 
+    gap: 10px; 
    
   }
 
@@ -437,8 +437,8 @@ width:110%
    background-size: contain;
     width: 80%;
     flex-wrap: wrap;
-    justify-content: center; /* Center keys horizontally */
-    gap: 10px; /* Adjust gap between keys */
+    justify-content: center; 
+    gap: 10px; 
   }
 
   .special-key {
